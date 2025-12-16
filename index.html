@@ -264,6 +264,31 @@
             }
         }
 
+        .footer-links {
+            margin-top: 2rem;
+            animation: fadeInUp 0.8s ease-out 1.2s both;
+        }
+
+        .privacy-link, .contact-link {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border-bottom: 2px solid transparent;
+        }
+
+        .privacy-link:hover, .contact-link:hover {
+            color: white;
+            border-bottom-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .separator {
+            color: rgba(255, 255, 255, 0.6);
+            margin: 0 15px;
+            font-weight: 300;
+        }
+
         @media (max-width: 768px) {
             .logo {
                 font-size: 2.5rem;
@@ -288,6 +313,15 @@
 
             .features {
                 grid-template-columns: 1fr;
+            }
+
+            .footer-links {
+                margin-top: 1.5rem;
+            }
+
+            .separator {
+                display: block;
+                margin: 10px 0;
             }
         }
     </style>
@@ -342,6 +376,12 @@
                 <div class="feature-title">Instant Matching</div>
                 <div class="feature-desc">Smart algorithms for perfect connections</div>
             </div>
+        </div>
+
+        <div class="footer-links">
+            <a href="privacy.html" class="privacy-link">Privacy Policy</a>
+            <span class="separator">•</span>
+            <a href="mailto:support@oncall-app.com" class="contact-link">Contact Us</a>
         </div>
     </div>
 
